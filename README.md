@@ -9,3 +9,7 @@ Files:
 * `backend/serial-backend.js`: pure node.js script (Backend) that handles the connection with the Arduino and transmits its data to the Electron main script – **Be sure to check the `arduinoPort` and `arduinoBaudRate` variables there!**
 * `frontend/js/main.js`: main script for the Frontend, which receives the data from the Arduino (and can send some data back) – it works as a regular JS script within a browser (as it is loaded by the `frontend/main.html` file inside the window), but it also has access to some node.js features (`require()`, file system, etc.)
 * `test.ino`: a simple Arduino sketch to test all this...
+
+Tips:
+
+* If you want to "package" your application as a "standalone" one, simply rename the main folder (here `electron-arduino-template`) to `app`, then move it into the `Resources` folder of Electron.
