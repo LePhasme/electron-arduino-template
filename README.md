@@ -7,7 +7,7 @@
 
 **Main files:**
 
-* `index.js`: the main Electron script that opens the window with the Frontend (visible part), launches the Backend (Arduino part) and acts as a gateway between the Frontend and the Backend – **Be sure to check the `nodeJsPath` and `debug` variables there!**
+* `index.js`: the main Electron script that opens the window with the Frontend (visible part), launches the Backend (Arduino part) and acts as a gateway between the Frontend and the Backend – **Be sure to check the `nodeJsPath` and `debug` variables there!** (`debug` is set to `true` by default, so you can see what's going on using the JavaScript Console)
 * `backend/serial-backend.js`: pure node.js script (Backend) that handles the connection with the Arduino and transmits its data to the Electron main script – **Be sure to check the `arduinoPort` and `arduinoBaudRate` variables there!**
 * `frontend/js/main.js`: main script for the Frontend, which receives the data from the Arduino (and can send some data back) – it works as a regular JS script within a browser (as it is loaded by the `frontend/main.html` file inside the window), but it also has access to some node.js features (`require()`, file system, etc.)
 * `test.ino`: a simple Arduino sketch to test all this...
