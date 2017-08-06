@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Electron - Arduino Template</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    <!-- Electron hack for jQuery and some other libraries... -->
+    <script>
+    if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <!-- Other libraries go here... -->
+    <script>
+    if (window.module) module = window.module;
+    </script>
+    <!-- Main script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
