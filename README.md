@@ -1,5 +1,7 @@
 1. Download or clone the repository then perform `npm install` from within the `electron-arduino-template` folder
-2. Open Electron then drag'n drop the `electron-arduino-template` into its window (in the "Drag your app here to run it" area)
+2. Change the `nodeJsPath` variable of the `index.js` script so it reflects the actual path of your node.js installation
+3. Upload the `test.ino` sketch into the Arduino, note the port identifier given by the Arduino IDE and replace the `arduinoPort` with it in the `backend/serial-backend.js` script. Quit the Arduino IDE.
+4. Open Electron then drag'n drop the `electron-arduino-template` into its window (in the "Drag your app here to run it" area)
 
 Files:
 
